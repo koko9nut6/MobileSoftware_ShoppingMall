@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Productdetails">
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <ImageView
+        android:id="@+id/list_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_more" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:background="@drawable/detail_page_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/detail_spray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/ic_cat_bg"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="Spray"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/detail_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/ic_cat_bg"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="Woman"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/detail_spray"
+            app:layout_constraintStart_toEndOf="@+id/detail_spray"
+            app:layout_constraintTop_toTopOf="@+id/detail_spray" />
+
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Louis Vuitton Rhapsody"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/detail_price"
+            app:layout_constraintStart_toStartOf="@+id/detail_spray"
+            app:layout_constraintTop_toBottomOf="@+id/detail_spray" />
+
+        <TextView
+            android:id="@+id/detail_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="$ 760"
+            android:textColor="#42995C"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/detail_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detail_name" />
+
+        <TextView
+            android:id="@+id/detail_output"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/rubik"
+            android:lineSpacingExtra="2dp"
+            android:text="일몰처럼 강렬한 만다린. 완벽한 하루의 연장선. 해 질 녘의 전경. 다채로운 색상의 향연. 저 멀리 펼쳐진 수평선. 수석 조향사 자크 카발리에 벨투뤼가 포착한 일몰의 감동을 담아낸 무지갯빛 향수."
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintEnd_toEndOf="@+id/detail_price"
+            app:layout_constraintStart_toStartOf="@+id/detail_name"
+            app:layout_constraintTop_toBottomOf="@+id/detail_name" />
+
+        <ImageView
+            android:id="@+id/detail_num01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/detail_output"
+            app:layout_constraintTop_toTopOf="@+id/detail_cart"
+            app:srcCompat="@drawable/ic_minus" />
+
+        <TextView
+            android:id="@+id/detail_num02"
+            android:layout_width="50dp"
+            android:layout_height="53dp"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/detail_num01"
+            app:layout_constraintStart_toEndOf="@+id/detail_num01"
+            app:layout_constraintTop_toTopOf="@+id/detail_num01"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/detail_num03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/detail_num02"
+            app:layout_constraintStart_toEndOf="@+id/detail_num02"
+            app:layout_constraintTop_toTopOf="@+id/detail_num02"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <Button
+            android:id="@+id/detail_cart"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:background="@drawable/detail_page_cart_button_bg"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:fontFamily="@font/rubik_medium"
+            android:padding="16dp"
+            android:paddingRight="16dp"
+            android:text="Add to Cart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/detail_img02"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="32dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:transitionName="image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rhapsody2" />
+
+        <ImageView
+            android:id="@+id/detail_img01"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:transitionName="image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rhapsody1" />
+
+        <TextView
+            android:id="@+id/detail_site"
+            android:layout_width="362dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="https://kr.louisvuitton.com/kor-kr/women/fragrances"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_output" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/detail_main"
+        android:layout_width="375dp"
+        android:layout_height="337dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:transitionName="image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_img"
+        app:srcCompat="@drawable/rhapsody3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
